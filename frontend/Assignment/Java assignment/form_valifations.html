@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        table{
+            margin: 0px auto;
+        }
+    </STyle>
+</head>
+<body>
+    <form action=""  onsubmit="return validation()" >
+        <!-- <fieldset> -->
+            <table>
+                <tr>
+                    <td>ENTER YOUR NAME </td>
+                    <TD><div>
+            <input type="text" placeholder="Enter your name" id="name">
+            <span id="nameerr"></span>
+        </div></TD>
+                </tr>
+                <tr>
+                    <td>ENTER YOUR LAST NAME</td>
+                    <TD>        <div>
+            <input type="text" placeholder="Enter your last name" id="sname">
+            <span id="snameerr"></span>
+        </div></TD>
+                </tr>
+
+                <tr>
+                    <td>ENTER YOUR PHONE NUMBER</td>
+                    <td>
+        <div>
+            <input type="tel" placeholder="Enter your phone number" id="phone">
+            <span id="phoneerr"></span>
+        </div></td>
+                </tr>
+                <tr>
+                    <td>ENTER YOUR PASSWORD</td>
+                    <TD><div>
+            <input type="password" placeholder="Enter your Password" id="pass">
+            <span id="passerr"></span>
+        </div></TD>
+                </tr>
+                <TR>
+                    <TD>CONFIRM YOUR PASSWORD</TD>
+                    <TD>
+        <div>
+            <input type="password" placeholder="reenter your password" id="cpass">
+            <span id="cpasserr"></span>
+        </div></TD>
+                </TR>
+                <TR>
+                    <TD>
+        <div>
+            <input type="submit">
+        </div></TD>
+                </TR>
+            </table>
+        </fieldset>
+        
+    </form>
+    <script>
+        let name = document.getElementById("name")
+        let nameerr = document.getElementById("nameerr")
+
+         let sname = document.getElementById("sname")
+        let snameerr = document.getElementById("snameerr")
+
+         let phone = document.getElementById("phone")
+        let phoneerr = document.getElementById("phoneerr")
+
+         let pass = document.getElementById("pass")
+        let passerr = document.getElementById("passerr")
+
+         let cpass = document.getElementById("cpass")
+        let cpasserr = document.getElementById("cpasserr")
+
+        function validation() {
+            if (name.value == "" || name.value == null ){
+                nameerr.innerHTML = "please enter your name "
+                nameerr.style.color = "red"
+                return false
+            }
+            else {
+                nameerr.innerHTML = ""
+            }
+            if(sname.value == "" || sname.value == null){
+                snameerr.innerHTML = "please enter your last name "
+                snameerr.style.color = "red"
+                return false
+            }
+            else{
+                snameerr.innerHTML = ""
+            }
+            if (phone.value == "" || phone.value == null){
+                phoneerr.innerHTML = "please enter valid phone number"
+                phoneerr.style.color = "red"
+                return false
+            }
+            else {
+                phoneerr.innerHTML = ""
+            }
+            if (pass.value == "" || pass.value == null){
+                passerr.innerHTML = "please enter your pass"
+                passerr.style.color = "red"
+                return false
+            }
+            else{
+                passerr.innerHTMLb = ""
+            }
+            if(pass.value != cpass.value){
+                alert("password does not match")
+                return false
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -35,7 +35,7 @@ int main()
 		printf("\nD grade %.2f",avg);
 	}
 	else{
-		printf("\nfell");
+		printf("\nhello");
 	}
 	return 0;
 }

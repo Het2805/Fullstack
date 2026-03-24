@@ -1,0 +1,24 @@
+constructer 
+
+constructer is a Special member function whose task is to initialize the object of its class.
+characteristics of constructor
+1=> they have the same name as the class name. that's why it is vary special.
+2=> they don not have any return types.
+3=> they are involved automatically when the objects are created
+
+types of constructer
+1=> default constructor 
+2=> parameterized constructor
+3=> copy constructor
+
+when there is a more than one constructor in a class then it is called constructor overloading.
+
+
+*****************************************************************************************************************************************************'
+
+Inheritance => the object of one class can accqire the properties of object of another class is called inheritance
+
+creating a new class from an exisisting class is called inheritance
+
+types of inheritance
+
